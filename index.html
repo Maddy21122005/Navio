@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navio</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/utility.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/logo.png" type="image/png">
+
+</head>
+<body>
+  <div class="template">
+    <header>
+      <nav>
+        <a href="./index.html" class="logo"></a>
+        <div class="btn" id="visualize">Visualize</div>
+        <ul class="nav-menu">
+          <li><a href="#" id="ClearPathbtn">Clear Path</a></li>
+          <li><a href="#" id="ClearBoardbtn">Clear Board</a></li>
+          <li><a href="#" id="GenerateMazebtn">Generate Maze</a></li>
+          <li class="drop-box">
+            <a href="#">Speed <span class="caret"></span></a>
+            <ul class="drop-menu drop-menu-speed">
+              <li><a href="#">Slow</a></li>
+              <li class="active"><a href="#">Normal</a></li>
+              <li><a href="#">Fast</a></li>
+            </ul>
+          </li>
+          <li class="drop-box">
+            <a href="#">Algorithm<span class="caret"></span></a>
+            <ul class="drop-menu drop-menu-algo">
+              <li class="active"><a href="#">Dijkstra</a></li>
+              <li><a href="#">BFS</a></li>
+              <li><a href="#">DFS</a></li>
+            </ul> 
+          </li>
+        </ul>
+      </nav>
+      <ul class="guide-bar">
+        <li>
+            <div class="icon source">
+                <img href="./assets/rocket.png"></img>
+            </div>
+            <div class="text">Source</div>
+        </li>
+        <li>
+            <div class="icon target">
+                <img href="./assets/full-moon.png"></img>
+            </div>
+            <div class="text">Target</div>
+        </li>
+        <li>
+            <div class="icon unvisited">
+                <!-- <img href="./assets/rocket.png"></img> -->
+            </div>
+            <div class="text">Univisited</div>
+        </li>
+        <li>
+            <div class="icon visited">
+                <!-- <img href="./assets/rocket.png"></img> -->
+            </div>
+            <div class="text">Visited</div>
+        </li>
+        <li>
+            <div class="icon wall">
+                <img href="./assets/wall.png"></img>
+            </div>
+            <div class="text">Wall</div>
+        </li>
+        <li>
+            <div class="icon maze-wall">
+                <img href="./assets/wall.png"></img>
+            </div>
+            <div class="text">Maze-Wall</div>
+        </li>
+      </ul>
+    </header>
+
+    <div class="board"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

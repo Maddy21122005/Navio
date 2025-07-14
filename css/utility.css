@@ -1,0 +1,153 @@
+.caret{
+    display: block;
+    aspect-ratio: 1;
+    width: 20px;
+    background: url('../assets/caret.png');
+    margin-bottom: 3px;
+}
+
+.caret:hover{
+    filter: invert(1);
+}
+
+.wall{
+    background: url('../assets/meteorite.png') no-repeat center / contain;
+
+}
+.path{
+
+        /* background-color: var(--path-clr);
+    animation: pathPulse 1s infinite; */
+     /* background-color: green;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    animation: pathPulse 0.8s infinite ease-in-out;
+    border-radius: 0px; ✅ KEEP square */
+
+     /* background: linear-gradient(135deg, #fbd786, #f7797d); Soft Yellow-Pink */
+     background: linear-gradient(gold);
+  box-shadow: 0 0 10px rgba(255, 183, 77, 0.8);
+  animation: pathPulse 1s infinite ease-in-out;
+  border-radius: 4px;
+
+      
+    
+}
+
+@keyframes pathGlow {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+  }
+}
+
+
+
+
+.visited{
+    
+
+    /* background-color: goldenrod; /* Cyan/blue look 
+    animation: visitedAnim 0.3s ease-out;
+    box-shadow: 0 0 4px rgba(0, 188, 212, 0.7);
+    transform: scale(1.05);
+    border-radius: 0px; /* ✅ REMOVE circle 
+    z-index: 1; */
+
+     background-color: #00bcd4; /* Classy Cyan */
+  animation: visitedAnim 0.4s ease-out;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+  transform: scale(1.06);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+
+
+@keyframes visitedAnim {
+    0% {
+        transform: scale(0.7);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+.unvisited{
+    background-color:white;
+    border: 1px solid black;
+}
+
+.source{
+    background: url(../assets/rocket.png)  no-repeat center / contain;
+}
+.target{
+    background: url(../assets/full-moon\ \(2\).png) no-repeat center / contain;
+}
+
+.icon{
+    aspect-ratio: 1;
+    width:20px;
+    margin: 4px;
+}
+
+.maze-wall{
+
+     background-color:  #5d61a1;
+    animation: wallBounce 0.3s ease;
+}
+
+@keyframes visitedAnim {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pathPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+  }
+  50% {
+    transform: scale(1.12);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+  }
+}
+
+@keyframes wallBounce {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
